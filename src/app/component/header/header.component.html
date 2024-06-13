@@ -1,0 +1,17 @@
+<header>
+    <div class="navbar bg-warning shadow-sn">
+        <div class="nav-brand align-item-center d-flex">
+            <i routerLink="products" style="font-size: 40px; cursor: pointer;" class="fas fa-dolly-flatbed">&nbsp;</i>
+            <strong style="font-size: 30px;">Ecommerce</strong>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search products">
+            </div>
+            <span class="fas fa-search search-icon"></span>
+            <!-- <button style="font-size: 30px;" class="fa fa-cart-plus cart-icon"></button> -->
+        </div>
+        <button routerLink="cart" class="btn btn-warning">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+</header>
