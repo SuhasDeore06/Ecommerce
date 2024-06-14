@@ -1,6 +1,6 @@
 .card
 {
-    height: 60vh;
+    height: 70vh;
     margin:25px;
     padding: 25px;
 }
@@ -8,7 +8,7 @@
 .center
 {
     position: absolute;
-    top: 58%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -24,7 +24,7 @@ h4,h6
     color: inherit;
     border: none;
     outline: none;
-    height: 162px;
+    height: 200px;
     width:250px;
     margin: 20px 0px;
 }

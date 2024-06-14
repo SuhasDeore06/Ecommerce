@@ -4,7 +4,7 @@
             <i routerLink="products" style="font-size: 40px; cursor: pointer;" class="fas fa-dolly-flatbed">&nbsp;</i>
             <strong style="font-size: 30px;">Ecommerce</strong>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search products">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
             </div>
             <span class="fas fa-search search-icon"></span>
             <!-- <button style="font-size: 30px;" class="fa fa-cart-plus cart-icon"></button> -->

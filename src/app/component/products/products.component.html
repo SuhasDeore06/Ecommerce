@@ -1,25 +1,25 @@
 <div class="card-top container-fluid">
     <div class="container d-flex">
         <div class="item">
-            <a>
+            <a style="cursor: pointer;" (click)="filter('')">
                 <img src="assets/all.jpg">
                 <h5>All Products</h5>
             </a>
         </div>
         <div class="item">
-            <a>
+            <a style="cursor: pointer;" (click)="filter('electronics')">
                 <img src="assets/electronics.jpg">
                 <h5>Electronics</h5>
             </a>
         </div>
         <div class="item">
-            <a>
+            <a style="cursor: pointer;" (click)="filter('fashion')">
                 <img src="assets/fashion.jpg">
                 <h5>Fashion</h5>
             </a>
         </div>
         <div class="item">
-            <a>
+            <a style="cursor: pointer;" (click)="filter('jewelery')">
                 <img src="assets/jewellery.jpg">
                 <h5>Jewllery</h5>
             </a>
@@ -29,7 +29,7 @@
 
 <div class="container">
     <div class="row">
-        <ng-container *ngFor="let item of productList">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
             <div class="card col-md-3">
                 <img src="{{item.image}}">
                 <h5 style="white-space:nowrap; overflow:hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.title}}</h5>
